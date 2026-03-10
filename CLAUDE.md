@@ -14,13 +14,23 @@ There is no build step, bundler, transpiler, or test suite. The game runs direct
 
 ## Git & GitHub
 
-All changes should be committed and pushed to `https://github.com/russwitt/dead-sector`.
+**Commit and push to GitHub after every meaningful unit of work** — after fixing a bug, adding a feature, or completing any logical change. This ensures work is never lost and the repo always reflects current state.
+
+Remote: `https://github.com/russwitt/dead-sector` (branch: `master`)
 
 ```bash
-git add <files>
+git add <specific files>
 git commit -m "descriptive message"
 git push
 ```
+
+Commit message conventions:
+- `fix: <what was broken and how it was fixed>`
+- `feat: <what was added>`
+- `refactor: <what was restructured>`
+- `chore: <config, tooling, non-code changes>`
+
+Always stage specific files by name rather than `git add .` to avoid accidentally committing unintended files.
 
 ## Architecture
 
